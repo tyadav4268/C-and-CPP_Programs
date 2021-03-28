@@ -21,23 +21,23 @@ int main(){
         vecBits.push_back(indvBit);
     }
     char operation = (char)vecBits[1][0];
-    double result;
+    double operand_one = std::stod(vecBits[0]), operand_two = std::stod(vecBits[2]), result;
     switch(operation){
         case '+':
-        result = std::stod(vecBits[0]) + std::stod(vecBits[2]);
+        result = operand_one + operand_two;
         break;
         case '-':
-        result = std::stod(vecBits[0]) - std::stod(vecBits[2]);
+        result = operand_one - operand_two;
         break;
         case '*':
-        result = std::stod(vecBits[0]) - std::stod(vecBits[2]);
+        result = operand_one * operand_two;
         break;
         case '/':
-        result = std::stod(vecBits[0]) / std::stod(vecBits[2]);
+        result = operand_one / operand_two;
         break;
         default:
         std::cout<<"Please enter +, -, /, * only! ";
     }
-    printf("%0.1f %c %0.1f = %0.1f\n", std::stod(vecBits[0]), operation, std::stod(vecBits[2]), result);
+    printf("%0.1f %c %0.1f = %0.1f\n", operand_one, operation, operand_two, result);
     return 0;
 }
