@@ -46,21 +46,21 @@ int menu(){
 
 void four_wheeler(){
   nof++;
-  amount = amount + 100;
+  amount = amount + 150;
   total++;
   printf("\n4-wheeler Parked!\n");
 }
 
 void three_wheeler(){
   noth++;
-  amount = amount + 50;
+  amount = amount + 100;
   total++;
   printf("\n3-wheeler Parked!\n");
 }
 
 void two_wheeler(){
   notw++;
-  amount = amount + 150;
+  amount = amount + 50;
   total++;
   printf("\n2-wheeler Parked!\n");
 }
